@@ -1,0 +1,1184 @@
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+ActsAsTrackableTest: test_acts_as_trackable_method_is_available
+---------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+ActsAsTrackableTest: test_acts_as_tracker_method_is_available
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (34.3ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+ActsAsTrackableTest: test_generated_methods_'acts_as_trackable_by'_are_available
+--------------------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35mActsAsTrackable::Track Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? ORDER BY "posts"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:41:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+ActsAsTrackableTest: test_generated_methods_by_'acts_as_tracker_on'_are_available
+---------------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_trackable_by'_is_available
+--------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_tracker'_is_available
+---------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_tracker_on'_is_available
+------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+ActsAsTrackableTest: test_module_'ActsAsTrackable'_is_existed
+-------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------
+ActsAsTrackableTest: test_track?/track/untrack_methods_are_available
+--------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------
+ActsAsTrackableTest: test_using_same_action_for_blog_and_post_works
+-------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mBlog Load (0.1ms)[0m  SELECT "blogs".* FROM "blogs"
+  [1m[36mBlog Load (0.1ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+ActsAsTrackableTest: test_acts_as_trackable_method_is_available
+---------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+ActsAsTrackableTest: test_acts_as_tracker_method_is_available
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (11.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+ActsAsTrackableTest: test_generated_methods_'acts_as_trackable_by'_are_available
+--------------------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35mActsAsTrackable::Track Load (0.2ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? ORDER BY "posts"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+ActsAsTrackableTest: test_generated_methods_by_'acts_as_tracker_on'_are_available
+---------------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_trackable_by'_is_available
+--------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_tracker'_is_available
+---------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_tracker_on'_is_available
+------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+ActsAsTrackableTest: test_module_'ActsAsTrackable'_is_existed
+-------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------
+ActsAsTrackableTest: test_track?/track/untrack_methods_are_available
+--------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------
+ActsAsTrackableTest: test_using_same_action_for_blog_and_post_works
+-------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:41:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs"
+  [1m[36mBlog Load (0.1ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+ActsAsTrackableTest: test_acts_as_trackable_method_is_available
+---------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (11.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+ActsAsTrackableTest: test_acts_as_tracker_method_is_available
+-------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (19.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+ActsAsTrackableTest: test_generated_methods_'acts_as_trackable_by'_are_available
+--------------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36mActsAsTrackable::Track Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? ORDER BY "posts"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mActsAsTrackable::Track Load (0.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35mActsAsTrackable::Track Load (0.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mActsAsTrackable::Track Load (0.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."tracker_type" = 'User' AND "tracks"."tracker_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "read"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ?  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+ActsAsTrackableTest: test_generated_methods_by_'acts_as_tracker_on'_are_available
+---------------------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35mActsAsTrackable::Track Load (0.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 2], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'favorite'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["action", "read"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_trackable_by'_is_available
+--------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["action", "read"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "tracks" ON "users"."id" = "tracks"."tracker_id" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ? AND "tracks"."action" = 'read' AND "tracks"."tracker_type" = 'User'  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."trackable_id" = ? AND "tracks"."trackable_type" = ?[0m  [["trackable_id", 1], ["trackable_type", "Post"]]
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_tracker'_is_available
+---------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mActsAsTrackable::Track Load (0.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 2], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "read"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 2], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'read' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'read'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'read' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'favorite'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 2 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------
+ActsAsTrackableTest: test_method_'acts_as_tracker_on'_is_available
+------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "read"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'read' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+ActsAsTrackableTest: test_module_'ActsAsTrackable'_is_existed
+-------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+ActsAsTrackableTest: test_track?/track/untrack_methods_are_available
+--------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------
+ActsAsTrackableTest: test_using_same_action_for_blog_and_post_works
+-------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["name", "user3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "blog title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 1"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 2"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "posts" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["title", "post title 3"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mBlog Load (0.1ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  [1m[35mBlog Load (0.1ms)[0m  SELECT "blogs".* FROM "blogs"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36mActsAsTrackable::Track Load (0.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Blog' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35mActsAsTrackable::Track Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Blog"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tracks" ("action", "created_at", "trackable_id", "trackable_type", "tracker_id", "tracker_type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["action", "favorite"], ["created_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00], ["trackable_id", 1], ["trackable_type", "Post"], ["tracker_id", 1], ["tracker_type", "User"], ["updated_at", Thu, 23 Jan 2014 16:43:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mActsAsTrackable::Track Load (0.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Blog' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35mActsAsTrackable::Track Load (0.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."trackable_type" = 'Post' AND "tracks"."trackable_id" = 1 AND "tracks"."action" = 'favorite' LIMIT 1  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ?[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Blog'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "blogs" INNER JOIN "tracks" ON "blogs"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Blog'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" INNER JOIN "tracks" ON "posts"."id" = "tracks"."trackable_id" WHERE "tracks"."tracker_id" = ? AND "tracks"."tracker_type" = ? AND "tracks"."action" = 'favorite' AND "tracks"."trackable_type" = 'Post'[0m  [["tracker_id", 1], ["tracker_type", "User"]]
+  [1m[35m (1.1ms)[0m  rollback transaction
