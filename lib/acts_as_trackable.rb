@@ -43,8 +43,8 @@ module ActsAsTrackable
           self.track_by?(tracker, action_name)
         end
 
-        define_method("#{action_name}_by") do |tracker|
-          self.track_by(tracker, action_name)
+        define_method("#{action_name}_by") do |tracker, note=nil|
+          self.track_by(tracker, action_name, note)
         end
 
         define_method("un#{action_name}_by") do |tracker|
@@ -75,8 +75,8 @@ module ActsAsTrackable
           self.track?(trackable, action_name)
         end
 
-        define_method("#{action_name}") do |trackable|
-          self.track(trackable, action_name)
+        define_method("#{action_name}") do |trackable, note=nil|
+          self.track(trackable, action_name, note)
         end
 
         define_method("un#{action_name}") do |trackable|

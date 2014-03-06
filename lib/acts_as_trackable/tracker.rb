@@ -17,8 +17,8 @@ module ActsAsTrackable
         self.tracks.find_by(trackable: trackable, action: action).present?
       end
 
-      def track(trackable, action = nil)
-        self.tracks.create(trackable: trackable, action: action)
+      def track(trackable, action = nil, note = nil)
+        self.tracks.create(trackable: trackable, action: action, note: note)
       end
 
       def untrack(trackable, action = nil)

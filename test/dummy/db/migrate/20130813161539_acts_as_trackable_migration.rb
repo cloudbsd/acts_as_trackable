@@ -4,6 +4,7 @@ class ActsAsTrackableMigration < ActiveRecord::Migration
       t.belongs_to :tracker, polymorphic: true, :null => false, index: true
       t.belongs_to :trackable, polymorphic: true, :null => false, index: true
       t.string  :action, :null => false
+      t.text  :note
 
       t.timestamps
     end

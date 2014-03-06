@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20131224174648) do
     t.integer  "trackable_id",   null: false
     t.string   "trackable_type", null: false
     t.string   "action",         null: false
+    t.text     "note"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
