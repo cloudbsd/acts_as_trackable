@@ -17,3 +17,5 @@
 
 # Ignore all uploaded files.
 /test/dummy/public/uploads
+
+/.gems
