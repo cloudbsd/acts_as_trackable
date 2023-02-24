@@ -87,14 +87,14 @@ module ActsAsTrackable
 
     def do_acts_as_trackable(options={})
       unless self.is_trackable?
-        has_many :tracks, {as: :trackable, dependent: :destroy, class_name: 'ActsAsTrackable::Track'}.merge(options)
+        has_many :tracks, **options.merge(as: :trackable, dependent: :destroy, class_name: 'ActsAsTrackable::Track')
         include ActsAsTrackable::Trackable::Methods
       end
     end
 
     def do_acts_as_tracker(options={})
       unless self.is_tracker?
-        has_many :tracks, {as: :tracker, dependent: :destroy, class_name: 'ActsAsTrackable::Track'}.merge(options)
+        has_many :tracks, **options.merge(as: :tracker, dependent: :destroy, class_name: 'ActsAsTrackable::Track')
         include ActsAsTrackable::Tracker::Methods
       end
     end
